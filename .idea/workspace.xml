@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61e37b1d-7841-4ed6-8f58-ce338809cbae" name="Default Changelist" comment="" />
+    <list default="true" id="61e37b1d-7841-4ed6-8f58-ce338809cbae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/best_model_trained.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/best_model_trained.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfcc_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/mfcc_classifier.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mfcc_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="174" column="27" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="27" />
+            <state relative-caret-position="247">
+              <caret line="173" column="80" selection-start-line="173" selection-start-column="80" selection-end-line="173" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -34,6 +38,9 @@
       <find>MAX_BATCH</find>
       <find>seed</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -164,8 +171,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mfcc_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="174" column="27" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="27" />
+        <state relative-caret-position="247">
+          <caret line="173" column="80" selection-start-line="173" selection-start-column="80" selection-end-line="173" selection-end-column="80" />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ from sklearn.preprocessing import LabelEncoder
 import itertools
 
 
-INPUT_DIR = "../heartbeat-sounds/"
+INPUT_DIR = "heartbeat-sounds/"
 # 16 KHz
 SAMPLE_RATE = 16000
 seed = 1000
@@ -171,8 +171,9 @@ def evaluate_score(model, x_train, y_train, x_test, y_test):
     score = model.evaluate(x_train, y_train, verbose=1)
     print("model train data score       : ", round(score[1] * 100), "%")
 
+    # Score prints the loss along with the metrics as mentioned in model.compile
     score = model.evaluate(x_test, y_test, verbose=1)
-    print(len(score), score)
+    #print(len(score), score)
     print("model test data score        : ", round(score[1] * 100), "%")
 
 
