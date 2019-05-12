@@ -154,28 +154,28 @@ def load_data_and_split():
 
 
 def build_model():
-    # model = Sequential()
-    # model.add(LSTM(units=32, return_sequences=True, input_shape=(40, 1)))
-    # model.add(LSTM(units=16, return_sequences=False))
-    # model.add(Dense(len(CLASSES), activation='softmax'))
-    # model.summary()
-    # return model
     model = Sequential()
-    model.add(Conv1D(filters=4, kernel_size=9, activation='relu',
-                     input_shape=(40, 1),
-                     kernel_regularizer=l2(0.025)))
-    model.add(MaxPool1D(strides=4))
-    model.add(BatchNormalization())
-    model.add(Conv1D(filters=64, kernel_size=4, activation='relu'))
-    model.add(BatchNormalization())
-    model.add(Dropout(0.5))
-    model.add(Conv1D(filters=32, kernel_size=1, activation='relu'))
-    model.add(BatchNormalization())
-    model.add(Dropout(0.75))
-    model.add(GlobalAvgPool1D())
-    model.add(Dense(2, activation='softmax'))
+    model.add(LSTM(units=32, return_sequences=True, input_shape=(40, 1)))
+    model.add(LSTM(units=16, return_sequences=False))
+    model.add(Dense(len(CLASSES), activation='softmax'))
     model.summary()
     return model
+    # model = Sequential()
+    # model.add(Conv1D(filters=4, kernel_size=9, activation='relu',
+    #                  input_shape=(40, 1),
+    #                  kernel_regularizer=l2(0.025)))
+    # model.add(MaxPool1D(strides=4))
+    # model.add(BatchNormalization())
+    # model.add(Conv1D(filters=64, kernel_size=4, activation='relu'))
+    # model.add(BatchNormalization())
+    # model.add(Dropout(0.5))
+    # model.add(Conv1D(filters=32, kernel_size=1, activation='relu'))
+    # model.add(BatchNormalization())
+    # model.add(Dropout(0.75))
+    # model.add(GlobalAvgPool1D())
+    # model.add(Dense(2, activation='softmax'))
+    # model.summary()
+    # return model
 
 
 def train_net(model, x_train, y_train):
