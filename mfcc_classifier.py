@@ -29,7 +29,7 @@ import itertools
 
 INPUT_DIR = "heartbeat-sounds/"
 # 16 KHz
-SAMPLE_RATE = 16000
+SAMPLE_RATE = 4000
 seed = 1000
 
 # seconds
@@ -51,7 +51,7 @@ def load_audio_data(folder, file_names, duration=3, sr=SAMPLE_RATE):
             #print("load file ", sound_file)
             # use kaiser_fast technique for faster extraction
             X, sr = librosa.load(sound_file, sr=sr, duration=duration, res_type='kaiser_fast')
-            print(sr)
+            #print(sr)
             dur = librosa.get_duration(y=X, sr=sr)
             # pad audio file same duration
             if round(dur) < duration:
@@ -112,7 +112,7 @@ def load_data_and_split():
 
         A_normal_files = fnmatch.filter(os.listdir(INPUT_DIR + 'ESM/'), '*.wav')
         A_normal_sounds = load_audio_data(folder=A_folder, file_names=A_normal_files, duration=MAX_SOUND_CLIP_DURATION)
-        A_normal_labels = [1 for items in A_normal_sounds]
+        A_normal_labels = [0 for items in A_normal_sounds]
 
 
         print("loaded ESM dataset")
